@@ -1,0 +1,51 @@
+.cicruit-element {
+    border: 2px solid #ffffff;
+    background-color: #0288d1;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    user-select: none;
+    z-index: 500;
+}
+
+.cicruit-element:active {
+    cursor: grabbing; /* Курсор при перетаскивании */
+  }
+  
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.terminals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.terminal {
+    width: 20px;
+    height: 20px;
+    background-color: #039be5;
+    border-radius: 50%;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    user-select: none;
+}
+  
+.led .input:nth-child(1) {
+    background-color: #ff6f00; /* Цвет для анода */
+}
+  
+.led .input:nth-child(2) {
+    background-color: #4caf50; /* Цвет для катода */
+}
